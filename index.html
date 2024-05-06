@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Wallet Master</title>
+        <!-- bootstrap stylesheet link -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous">
+        <!-- tailwind stylesheet link -->
+        <link rel="stylesheet" href="output.css">
+
+        <!-- font-awesome cnd link -->
+        <script src="https://kit.fontawesome.com/cc76e3cc3d.js"
+            crossorigin="anonymous"></script>
+        <!-- raw css stylesheet link -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="bg-gray-200 mb-3">
+        <!-- header section design -->
+        <header>
+            <!-- menubar section design for lg device -->
+            <div>
+                <div>
+                    <div class="flex justify-between items-center px-3 shadow">
+                        <!-- logo design -->
+                        <div class="flex items-center">
+                            <img src="image/wallet_logo.png" alt
+                                class="w-24 h-20">
+                            <span class="text-2xl">Wallet Master</span>
+                        </div>
+                        <!-- three_dot and x_mark button create  -->
+                        <div>
+                            <button><i class="fa-solid fa-bars text-3xl" id="bar"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- navbar list design -->
+                <div class="list ">
+                    <div class="flex justify-between items-center px-3 shadow">
+                        <!-- logo design -->
+                        <div class="flex items-center">
+                            <img src="image/wallet_logo.png" alt
+                                class="w-24 h-20">
+                            <span class="text-2xl">Wallet Master</span>
+                        </div>
+                        <!-- three_dot and x_mark button create  -->
+                        <div>
+                            <button><i class="fa-solid fa-xmark text-4xl text-green-600 hover:text-black" id="close"></i></button>
+                        </div>
+                    </div>
+                    <!-- list section design -->
+                    <div class="space-y-10 px-3 mb-5">
+                        <h1 class="font-semibold text-2xl mt-5">How it works</h1>
+                        <div class="flex justify-between gap-4 w-[90%] px-3">
+                            <ul class="space-y-3 text-sm">
+                                <li><a href="" class="flex items-center gap-2 font-semibold"><i class="fa-solid fa-wallet text-xl text-green-400"></i> What is wallet</a></li>
+                                <li><a href="">Budgets</a></li>
+                                <li><a href="">Expense tracking</a></li>
+                                <li><a href="">Planned Payments</a></li>
+                                <li><a href="">Cash Flow insights</a></li>
+                                <li><a href="">Bank sync</a></li>
+                            </ul>
+                            <ul class="space-y-3 text-sm">
+                                <li><a href="" class="flex items-center gap-2 font-semibold"><i class="fa-solid fa-rocket text-blue-700 text-xl"></i> How to start</a></li>
+                                <li><a href="">First day</a></li>
+                                <li><a href="">First week</a></li>
+                                <li><a href="">First month</a></li>
+                            </ul>
+                        </div>
+                        <h1 class="font-semibold text-2xl">Resources</h1>
+                        <div class="flex justify-between w-75 px-3">
+                            <ul class="space-y-3 text-sm">
+                                <li><a href="">Blog</a></li>
+                                <li><a href="">Bank to sync</a></li>
+                                <li><a href="">Careers</a></li>
+                                <li><a href="">About Us</a></li>
+                                <li><a href="">Security</a></li>
+                            </ul>
+                        </div>
+                        <div class="space-y-5">
+                            <div>
+                                <h1 class="font-semibold text-2xl mb-3">Support</h1>
+                                <div class="flex w-75 px-3">
+                                    <ul class=" text-sm">
+                                        <li><a href="">Support</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="text-blue-700 px-4 py-3 bg-sky-100 rounded-full font-semibold">For Business</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- header section design -->
+            <div>
+               <div>
+                    <!-- icon with text design -->
+                    <div class="flex items-center gap-3 my-20 px-20">
+                            <!-- icon section -->
+                        <div>
+                            <i class="fa-solid fa-wallet text-5xl text-green-600"></i>
+                        </div>
+                        <!-- icon text section -->
+                        <div>
+                            <p class="text-5xl font-serif">Wallet</p>
+                            <p class="text-gray-500 font-semibold">by wallet-master</p>
+                        </div>
+                    </div>
+
+                    <!-- header text design -->
+                    <div>
+                        <p class="text-center text-5xl font-semibold">Your Finances in One Place</p>
+                    </div>
+                    <!-- header image section design -->
+                    <div>
+                        <img src="image/main_img-3-768x821.png" alt="" class="mx-auto my-20 w-75">
+                    </div>
+                    <!-- logo with button design -->
+                    <div>
+                        <div class="mx-4 space-y-3">
+                            <div class="flex gap-3">
+                                <img src="image/app-store.svg" alt="">
+                                <img src="image/google-play.svg" alt="">
+                            </div>
+                            <div class="mx-20">
+                                <div class="bg-gray-300 w-36 rounded-full">
+                                    <button class="btn btn-group">Try Web App</button><i class="fa-solid fa-chevron-right absolute mt-[12px]"></i>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+
+        </header>
+
+        <!-- website body section design -->
+        <main class="mt-40">
+            <!-- counter section design -->
+            <div class="bg-white ps-4 text-center space-y-10">
+                <div>
+                    <div>
+                        <div class="py-5">
+                            <div>
+                                <h1 class="text-3xl font-semibold"><span id="num">6</span>.<span id="point">5</span> M</h1>
+                                <p class="text-2xl font-semibold"><i class="fa-solid fa-user"></i> Download</p>
+                            </div>
+                        </div>
+                        <div class="py-5">
+                            <div>
+                                <h1 class="text-3xl font-semibold"><span id="ratingNum">4</span>.<span id="ratingPoint">7</span></h1>
+                                <p class="text-2xl font-semibold"><i class="fa-solid fa-star"></i> Rating</p>
+                            </div>
+                        </div>
+                        <div class="py-5">
+                            <div>
+                                <h1 class="text-3xl font-semibold"><span id="projectNum">20</span>+</h1>
+                                <p class="text-2xl font-semibold"><i class="fa-solid fa-wallet"></i>Completed Projects</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <h1 class="text-3xl font-semibold my-5">Use Cases</h1>
+                        <div class="space-y-5 text-white">
+                            <div class="bg-gradient-to-r from-sky-500 to-indigo-500 p-5 space-y-5">
+                                <h1 class="text-2xl">Budgeting</h1>
+                                <p class="">Set unlimited daily, weekly, monthly, or one-time budgets</p>
+                            </div>
+                            <div class="bg-gradient-to-r from-orange-400 to-orange-700 p-5 space-y-5">
+                                <h1 class="text-2xl">Expense Control</h1>
+                                <p>See every transaction, synced and categorized automatically.</p>
+                            </div>
+                            <div class="bg-gradient-to-r from-green-400 to-green-700 p-5 space-y-5">
+                                <h1 class="text-2xl">Planning</h1>
+                                <p>Get ahead of the curve. Automated upcoming payment notifications.</p>
+                            </div>
+                        </div>
+                    </div>
+                
+
+
+                    <div class="py-20">
+                        <h1 class="text-3xl font-semibold my-5">Why Wallet?</h1>
+                        <div class="space-y-20">
+                            <div class="space-y-12">
+                                <img src="image/advance.png" alt="" class="w-50 mx-auto">
+                                <div class="space-y-5">
+                                    <h1 class="text-2xl">Advanced</h1>
+                                    <p>Wallet is simply smarter.We combine best-in-breed AI driven categorization and analytics with a deep set of features that are proven to work. </p>
+                                </div>
+                            </div>
+
+                            <div class="space-y-12">
+                                <img src="image/driven.png" alt="" class="w-50 mx-auto">
+                                <div class="space-y-5">
+                                    <h1 class="text-2xl">User Driven</h1>
+                                    <p>Wallet isn’t a “system.” You drive your own decision making process. Wallet learns from the user to provide only the data and tools you need most.</p>
+                                </div>
+                            </div>
+
+                            <div class="space-y-12">
+                                <img src="image/driven.png" alt="" class="w-50 mx-auto">
+                                <div class="space-y-5">
+                                    <h1 class="text-2xl">Private</h1>
+                                    <p>Wallet-master does not sell customer data to 3rd parties. Ever. Your data is yours. Our mission is to help you use it to lead a richer life.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- landing page site design -->
+            <div class="py-20 space-y-20">
+                <div class="mb-3">
+                    <h1 class="py-5 text-center text-4xl font-semibold">Landing a Richer Life</h1>
+                    <div>
+                        <img src="image/boat.png" alt="" class="mx-auto">
+                    </div>
+                    <div class="px-3 space-y-5 mt-3">
+                        <h1 class="text-3xl font-semibold">Our mission at wallet-master is to help you <span class="text-green-500">lead a richer life</span>.</h1>
+                        <p>Building a picture of all your assets, monitoring your money and controlling your spending has one purpose, and one purpose only: to lead to a richer life.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <img src="image/rich-life_.png" alt="" class="mx-auto">
+                    </div>
+                    <div class="px-3 space-y-5 mt-3">
+                        <h1 class="text-3xl font-semibold">A rich life isn’t just about money. <span class="text-green-500">It’s about how you use it</span>.</h1>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- wallet ask icon section design -->
+            <div class="bg-white py-16">
+                <div class="text-center">
+                    <h1 class="text-3xl font-semibold my-5">Wallet Helps You:</h1>
+                </div>
+                <div class="space-y-20">
+                    <div class="space-y-4">
+                        <img src="image/AskQuestions.svg" alt="" class="mx-auto bg-gray-100 p-3 rounded-xl shadow-xl">
+                        <div class="text-center space-y-2">
+                            <p class="text-xl font-semibold">Ask the Question</p>
+                            <p>Where does my money go?</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <img src="image/Piechart.svg" alt="" class="mx-auto bg-gray-100 p-3 rounded-xl shadow-xl">
+                        <div class="text-center space-y-2">
+                            <p class="text-xl font-semibold">See the Data</p>
+                            <p>Unlock key insights.</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <img src="image/PlannedPayments.svg" alt="" class="mx-auto bg-gray-100 p-3 rounded-xl shadow-xl">
+                        <div class="text-center space-y-2">
+                            <p class="text-xl font-semibold">Be Efficient</p>
+                            <p>No missed payments</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <img src="image/Stats-1.svg" alt="" class="mx-auto bg-gray-100 p-3 rounded-xl shadow-xl">
+                        <div class="text-center space-y-2">
+                            <p class="text-xl font-semibold">Have the Answers</p>
+                            <p>Anytime, anywhere.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- board section design -->
+                <div class="mt-5 py-5 px-4">
+                    <div class="px-5 space-y-5 bg-blue-50 py-5">
+                        <img src="image/Board-logo-primary.svg" alt="" class="">
+
+                        <div>
+                            <h1 class="text-3xl font-bold">Board: Wallet for Business</h1>
+                        </div>
+                        <div class="space-y-5 mt-5">
+                            <p class="font-semibold ">Looking for Wallet’s powerful features and more to run a small business?</p>
+                            <p>That’s why we invented Board: a powerful small business finance manager that goes beyond Point of Sale, to offer you a 360° view of your business finances.</p>
+                        </div>
+                        <div>
+                            <img src="image/board-image-2-e1649077143557.png" alt="" class="w-full mx-auto">
+                            <div class="mx-20">
+                                <div class="bg-blue-500 text-white w-32 rounded-full mx-auto">
+                                    <button class="btn btn-group text-white text-xl font-semibold">Try Board </button><i class="fa-solid fa-chevron-right absolute mt-[14px]"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div>
+                <div class="mt-5 text-center space-x-3">
+                    <i class="fa-brands fa-facebook-f text-xl p-2 border-2 border-gray-700 rounded-full w-10 text-center text-gray-500 cursor-pointer hover:bg-gray-700 duration-700"></i>
+                    <i class="fa-brands fa-twitter text-xl p-2 border-2 border-gray-700 rounded-full w-10 text-center text-gray-500 cursor-pointer hover:bg-gray-700 duration-700"></i>
+                    <i class="fa-brands fa-instagram text-xl p-2 border-2 border-gray-700 rounded-full w-10 text-center text-gray-500 cursor-pointer hover:bg-gray-700 duration-700"></i>
+                    <i class="fa-brands fa-linkedin text-xl p-2 border-2 border-gray-700 rounded-full w-10 text-center text-gray-500 cursor-pointer hover:bg-gray-700 duration-700"></i>
+                </div>
+                <div class="space-y-5 mt-5">
+                    <img src="image/google-play.svg" alt="" class="mx-auto">
+                    <img src="image/app-store.svg" alt="" class="mx-auto">
+                </div>
+
+                <div class="mt-5 text-center px-4">
+                    <p>Copyright 2022 Wallet-master s.r.o | All Rights Reserved | <a href="" class="text-sky-600">Privacy Policy</a> | <a href="" class="text-sky-600">Terms of Service</a></p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- bootstrap cdn link -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <!-- raw js link -->
+        <script src="script.js"></script>
+    </body>
+</html>

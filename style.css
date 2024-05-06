@@ -1,0 +1,24 @@
+
+
+.list{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    transition: 0.5s ease;
+    transform: scaleX(0);
+    transform-origin: right;
+    background-color: white;
+}
+
+.active{
+    transform: scaleX(1);
+    position: absolute;
+}
+
+/* list section design */
+ul>li>a:hover{
+    color: #0ba60b;
+}
+
+/* icon with text and image section design */
