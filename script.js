@@ -22,8 +22,11 @@ let rating = 0;
 const ratingPoint = document.getElementById("ratingPoint");
 let rp = 0;
 
-const projectNum = document.getElementById("projectNum");
-let project = 0;
+const languageNum = document.getElementById("languageNum");
+let languagesCount = 0;
+
+const bankNum = document.getElementById("bankNum");
+let bankCount = 0;
 const observer = new IntersectionObserver((items) => {
     items.forEach(item => {
         if (item.isIntersecting) {
@@ -86,15 +89,15 @@ const ratingObs = new IntersectionObserver((items) => {
 ratingObs.observe(ratingNum);
 ratingObs.observe(ratingPoint);
 
-const projects = new IntersectionObserver((items) => {
+const languages = new IntersectionObserver((items) => {
     items.forEach(item => {
         if (item.isIntersecting) {
             setInterval(() => {
-                if (project === 20) {
+                if (languagesCount === 20) {
                     clearInterval();
                 } else {
-                    project++;
-                    projectNum.innerText = project;
+                    languagesCount++;
+                    languageNum.innerText = languagesCount;
                 }
             }, 100);
         }
@@ -103,4 +106,24 @@ const projects = new IntersectionObserver((items) => {
     threshold: 0.1
 })
 
-projects.observe(projectNum);
+languages.observe(languageNum);
+
+
+const bank = new IntersectionObserver((items) => {
+    items.forEach(item => {
+        if (item.isIntersecting) {
+            setInterval(() => {
+                if (bankCount === 15) {
+                    clearInterval();
+                } else {
+                    bankCount++;
+                    bankNum.innerText = bankCount;
+                }
+            }, 100);
+        }
+    })
+}, {
+    threshold: 0.1
+})
+
+bank.observe(bankNum);

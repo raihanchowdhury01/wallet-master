@@ -103,7 +103,7 @@
             <div>
                <div>
                     <!-- icon with text design -->
-                    <div class="flex items-center gap-3 my-20 px-20">
+                    <div class="flex items-center gap-3 my-20 sm:mt-20 sm:my-5 px-20 sm:ms-40">
                             <!-- icon section -->
                         <div>
                             <i class="fa-solid fa-wallet text-5xl text-green-600"></i>
@@ -121,23 +121,25 @@
                     </div>
                     <!-- header image section design -->
                     <div>
-                        <img src="image/main_img-3-768x821.png" alt="" class="mx-auto my-20 w-75">
+                        <img src="image/main_img-3-768x821.png" alt="" class="mx-auto my-20 sm:my-5 w-75">
                     </div>
                     <!-- logo with button design -->
                     <div>
                         <div class="mx-4 space-y-3">
-                            <div class="flex gap-3">
-                                <img src="image/app-store.svg" alt="">
-                                <img src="image/google-play.svg" alt="">
+                            <div class="flex">
+                                <span class="flex gap-3 mx-auto">
+                                    <img src="image/app-store.svg" alt="">
+                                    <img src="image/google-play.svg" alt="">
+                                </span>
                             </div>
-                            <div class="mx-20">
+                            <div class="mx-20 sm:mx-[40%]">
                                 <div class="bg-gray-300 w-36 rounded-full">
-                                    <button class="btn btn-group">Try Web App</button><i class="fa-solid fa-chevron-right absolute mt-[12px]"></i>
+                                    <button class="btn btn-group">Try Web App <i class="fa-solid fa-chevron-right mt-[6px] ms-2"></i></button>
+                                </div>
                             </div>
                         </div>
                     </div>
-               </div>
-            </div>
+                </div>
 
         </header>
 
@@ -150,19 +152,25 @@
                         <div class="py-5">
                             <div>
                                 <h1 class="text-3xl font-semibold"><span id="num">6</span>.<span id="point">5</span> M</h1>
-                                <p class="text-2xl font-semibold"><i class="fa-solid fa-user"></i> Download</p>
+                                <p class="text-2xl font-semibold"><i class="fa-solid fa-user text-green-600"></i> Downloads</p>
                             </div>
                         </div>
                         <div class="py-5">
                             <div>
                                 <h1 class="text-3xl font-semibold"><span id="ratingNum">4</span>.<span id="ratingPoint">7</span></h1>
-                                <p class="text-2xl font-semibold"><i class="fa-solid fa-star"></i> Rating</p>
+                                <p class="text-2xl font-semibold"><i class="fa-solid fa-star text-green-600"></i> Rating</p>
                             </div>
                         </div>
                         <div class="py-5">
                             <div>
-                                <h1 class="text-3xl font-semibold"><span id="projectNum">20</span>+</h1>
-                                <p class="text-2xl font-semibold"><i class="fa-solid fa-wallet"></i>Completed Projects</p>
+                                <h1 class="text-3xl font-semibold"><span id="languageNum">20</span>+</h1>
+                                <p class="text-2xl font-semibold"><i class="fa-solid fa-globe text-green-600 me-3"></i>Languages</p>
+                            </div>
+                        </div>
+                        <div class="py-5">
+                            <div>
+                                <h1 class="text-3xl font-semibold"><span id="bankNum">15</span>K</h1>
+                                <p class="text-2xl font-semibold"><i class="fa-solid fa-building-columns text-green-600 me-3"></i>Banks Connect</p>
                             </div>
                         </div>
                     </div>
@@ -191,24 +199,24 @@
                     <div class="py-20">
                         <h1 class="text-3xl font-semibold my-5">Why Wallet?</h1>
                         <div class="space-y-20">
-                            <div class="space-y-10">
-                                <img src="image/advance.png" alt="" class="w-50 mx-auto">
+                            <div class="wallet_svg space-y-10">
+                                <img src="image/advance.png" alt="" class="mx-auto">
                                 <div class="space-y-5 px-4">
                                     <h1 class="text-2xl">Advanced</h1>
                                     <p>Wallet is simply smarter.We combine best-in-breed AI driven categorization and analytics with a deep set of features that are proven to work. </p>
                                 </div>
                             </div>
 
-                            <div class="space-y-10">
-                                <img src="image/driven.png" alt="" class="w-50 mx-auto">
+                            <div class="wallet_svg space-y-10">
+                                <img src="image/driven.png" alt="" class="mx-auto">
                                 <div class="space-y-5 px-4">
                                     <h1 class="text-2xl">User Driven</h1>
                                     <p>Wallet isn’t a “system.” You drive your own decision making process. Wallet learns from the user to provide only the data and tools you need most.</p>
                                 </div>
                             </div>
 
-                            <div class="space-y-10">
-                                <img src="image/driven.png" alt="" class="w-50 mx-auto">
+                            <div class="wallet_svg space-y-10">
+                                <img src="image/driven.png" alt="" class="mx-auto">
                                 <div class="space-y-5 px-4">
                                     <h1 class="text-2xl">Private</h1>
                                     <p>Wallet-master does not sell customer data to 3rd parties. Ever. Your data is yours. Our mission is to help you use it to lead a richer life.</p>
@@ -249,7 +257,7 @@
                 <div class="text-center">
                     <h1 class="text-3xl font-semibold my-5">Wallet Helps You:</h1>
                 </div>
-                <div class="space-y-20">
+                <div class="space-y-20 grid sm:grid-cols-2 items-center gap-5 sm:space-y-0">
                     <div class="space-y-4">
                         <img src="image/AskQuestions.svg" alt="" class="mx-auto bg-gray-100 p-3 rounded-xl shadow-xl">
                         <div class="text-center space-y-2">
@@ -284,7 +292,7 @@
                 <!-- board section design -->
                 <div class="mt-5 py-5 px-4">
                     <div class="px-5 space-y-5 bg-blue-50 py-5">
-                        <img src="image/Board-logo-primary.svg" alt="" class="">
+                        <img src="image/Board-logo-primary.svg" alt="">
 
                         <div>
                             <h1 class="text-3xl font-bold">Board: Wallet for Business</h1>
@@ -293,11 +301,11 @@
                             <p class="font-semibold ">Looking for Wallet’s powerful features and more to run a small business?</p>
                             <p>That’s why we invented Board: a powerful small business finance manager that goes beyond Point of Sale, to offer you a 360° view of your business finances.</p>
                         </div>
-                        <div>
-                            <img src="image/board-image-2-e1649077143557.png" alt="" class="w-full mx-auto">
-                            <div class="">
-                                <div class="bg-blue-500 text-white w-32 rounded-full ms-[25%]">
-                                    <button class="btn btn-group text-white text-xl font-semibold">Try Board </button><i class="fa-solid fa-chevron-right absolute mt-[14px]"></i>
+                        <div class="boardImage">
+                            <img src="image/board-image-2-e1649077143557.png" alt="" class="mx-auto">
+                            <div>
+                                <div class="bg-blue-500 text-white w-36 rounded-full ms-[25%] sm:ms-[35%] flex justify-around items-center">
+                                    <button class="btn btn-group text-white text-xl font-semibold py-2">Try Board &nbsp;<i class="fa-solid fa-chevron-right text-white mt-[6px]"></i></button>
                                 </div>
                             </div>
                         </div>

@@ -22,3 +22,20 @@ ul>li>a:hover{
 }
 
 /* icon with text and image section design */
+.wallet_svg>img{
+    width: 300px;
+}
+
+.boardImage>img{
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    .wallet_svg>img{
+        width: 250px;
+    }
+    .boardImage>img{
+        width: 70%;
+    }
+    
+}
