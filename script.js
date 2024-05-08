@@ -127,3 +127,12 @@ const bank = new IntersectionObserver((items) => {
 })
 
 bank.observe(bankNum);
+
+
+// large device list section design
+// const list_btn = document.querySelector(".lg_device");
+// const list_content = document.querySelector(".dropdown_content");
+
+// list_btn.addEventListener("click", ()=>{
+//     list_content.classList.toggle("content");
+// });

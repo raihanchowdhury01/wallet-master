@@ -30,6 +30,22 @@ ul>li>a:hover{
     width: 100%;
 }
 
+/* list section design for large device */
+
+
+.lg_device:hover .first_up{
+    visibility: hidden;
+}
+.first_up{
+    visibility: visible;
+}
+.lg_device:hover .first_down{
+    visibility: visible;
+}
+.first_down{
+    visibility: hidden;
+}
+
 @media (min-width: 640px) {
     .wallet_svg>img{
         width: 250px;
@@ -38,4 +54,11 @@ ul>li>a:hover{
         width: 70%;
     }
     
+}
+
+.dropdown_content{
+    display: none;
+}
+.lg_device:hover .dropdown_content{
+    display: block;
 }

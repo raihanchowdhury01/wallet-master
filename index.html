@@ -32,14 +32,63 @@
                                 class="w-24 h-20">
                             <span class="text-2xl">Wallet Master</span>
                         </div>
+                        
+                        <!-- list section design for large device -->
+
+                        <div class="d-none d-lg-block me-40">
+                            <div class="flex justify-between items-center">
+                                <ul class="flex justify-between space-x-10 me-4">
+                                    <li class="cursor-pointer lg_device relative"><a href="" class="hover:text-green-500">How it works <i class="fa-solid fa-chevron-up ms-1 absolute mt-2 first_up"></i><i class="fa-solid fa-angle-down ms-1 absolute mt-2 first_down"></i></a>
+                                        <div class="dropdown_content absolute top-6 w-[400px]">
+                                            <div class="flex justify-between gap-5 bg-white p-5 shadow-2xl rounded-xl">
+                                                <ul class="mx-auto space-y-2">
+                                                    <li><a href="" class="flex items-center gap-2 font-semibold"><i class="fa-solid fa-wallet text-sm text-green-400"></i> What is wallet</a></li>
+                                                    <li><a href="">Budgets</a></li>
+                                                    <li><a href="">Expense tracking</a></li>
+                                                    <li><a href="">Planned Payments</a></li>
+                                                    <li><a href="">Cash Flow insights</a></li>
+                                                    <li><a href="">Bank sync</a></li>
+                                                </ul>
+                                                <ul class="mx-auto space-y-2">
+                                                    <li><a href="" class="flex items-center gap-2 font-semibold"><i class="fa-solid fa-rocket text-blue-700 text-xl"></i> How to start</a></li>
+                                                    <li><a href="">First day</a></li>
+                                                    <li><a href="">First week</a></li>
+                                                    <li><a href="">First month</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cursor-pointer lg_device relative"><a href="" class="hover:text-green-500">Resources <i class="fa-solid fa-chevron-up ms-1 absolute mt-2 first_up"></i><i class="fa-solid fa-angle-down ms-1 absolute mt-2 first_down"></i></a>
+                                        <div class="dropdown_content absolute top-6 w-[200px] resource_list bg-white p-5 shadow-2xl rounded-xl">
+                                            <ul class="mx-auto space-y-2">
+                                                <li><a href="">Blog</a></li>
+                                                <li><a href="">Bank to sync</a></li>
+                                                <li><a href="">Careers</a></li>
+                                                <li><a href="">About Us</a></li>
+                                                <li><a href="">Security</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="cursor-pointer hover:text-green-500">Support</li>
+                                </ul>
+                                <div class="lgList">
+                                    <button class="text-blue-700 px-6 py-3 bg-sky-200 rounded-full font-semibold">For Business</button>
+                                </div>
+                                <div class="lgList flex justify-between space-x-6 ms-20">
+                                    <button class="border-green-500 border-1 px-4 py-2 rounded-3xl hover:bg-green-500 hover:text-white duration-500">Log In</button>
+                                    <button class="bg-green-500 px-4 py-2 rounded-3xl text-white">Sign Up</button>
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- three_dot and x_mark button create  -->
-                        <div>
+                        <div class="d-lg-none">
                             <button><i class="fa-solid fa-bars text-3xl hover:text-green-600 duration-300" id="bar"></i></button>
                         </div>
                     </div>
                 </div>
                 <!-- navbar list design -->
-                <div class="list ">
+                <div class="list shadow-2xl">
                     <div class="flex justify-between items-center px-3 shadow">
                         <!-- logo design -->
                         <div class="flex items-center">
@@ -101,44 +150,63 @@
 
             <!-- header section design -->
             <div>
-               <div>
-                    <!-- icon with text design -->
-                    <div class="flex items-center gap-3 my-20 sm:mt-20 sm:my-5 px-20 sm:ms-40">
+               <div class="md:flex">
+                    <div class="md:space-y-5">
+                            <!-- icon with text design -->
+                        <div class="flex items-center gap-3 my-20 sm:mt-20 sm:my-5 px-20 sm:ms-40 md:mx-auto lg:ms-44">
                             <!-- icon section -->
-                        <div>
-                            <i class="fa-solid fa-wallet text-5xl text-green-600"></i>
+                            <div>
+                                <i class="fa-solid fa-wallet text-5xl text-green-600"></i>
+                            </div>
+                            <!-- icon text section -->
+                            <div>
+                                <p class="text-5xl font-serif">Wallet</p>
+                                <p class="text-gray-500 font-semibold">by wallet-master</p>
+                            </div>
                         </div>
-                        <!-- icon text section -->
-                        <div>
-                            <p class="text-5xl font-serif">Wallet</p>
-                            <p class="text-gray-500 font-semibold">by wallet-master</p>
-                        </div>
-                    </div>
 
-                    <!-- header text design -->
-                    <div>
-                        <p class="text-center text-5xl font-semibold">Your Finances in One Place</p>
-                    </div>
-                    <!-- header image section design -->
-                    <div>
-                        <img src="image/main_img-3-768x821.png" alt="" class="mx-auto my-20 sm:my-5 w-75">
-                    </div>
-                    <!-- logo with button design -->
-                    <div>
-                        <div class="mx-4 space-y-3">
+                        <!-- header text design -->
+                        <div class="lg:px-20">
+                            <p class="text-center text-5xl font-semibold">Your Finances in One Place</p>
+                        </div>
+
+
+                        <div class="mx-4 space-y-3 d-md-block d-none">
                             <div class="flex">
                                 <span class="flex gap-3 mx-auto">
                                     <img src="image/app-store.svg" alt="">
                                     <img src="image/google-play.svg" alt="">
                                 </span>
                             </div>
-                            <div class="mx-20 sm:mx-[40%]">
+                            <div class="mx-20 sm:mx-[40%] md:ms-20 lg:ms-[40%]">
                                 <div class="bg-gray-300 w-36 rounded-full">
                                     <button class="btn btn-group">Try Web App <i class="fa-solid fa-chevron-right mt-[6px] ms-2"></i></button>
                                 </div>
                             </div>
                         </div>
                     </div>
+                   <div>
+                     <!-- header image section design -->
+                        <div>
+                            <img src="image/main_img-3-768x821.png" alt="" class="mx-auto my-20 sm:my-5 w-75">
+                        </div>
+                        <!-- logo with button design -->
+                        <div>
+                            <div class="mx-4 space-y-3 d-md-none">
+                                <div class="flex">
+                                    <span class="flex gap-3 mx-auto">
+                                        <img src="image/app-store.svg" alt="">
+                                        <img src="image/google-play.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="mx-20 sm:mx-[40%]">
+                                    <div class="bg-gray-300 w-36 rounded-full">
+                                        <button class="btn btn-group">Try Web App <i class="fa-solid fa-chevron-right mt-[6px] ms-2"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
                 </div>
 
         </header>
@@ -148,26 +216,26 @@
             <!-- counter section design -->
             <div class="bg-white text-center space-y-10">
                 <div>
-                    <div>
-                        <div class="py-5">
+                    <div class="grid md:grid-cols-3 lg:grid-cols-4">
+                        <div class="py-5 md:shadow-xl md:m-5 md:py-20">
                             <div>
                                 <h1 class="text-3xl font-semibold"><span id="num">6</span>.<span id="point">5</span> M</h1>
                                 <p class="text-2xl font-semibold"><i class="fa-solid fa-user text-green-600"></i> Downloads</p>
                             </div>
                         </div>
-                        <div class="py-5">
+                        <div class="py-5 md:shadow-xl md:m-5 md:py-20">
                             <div>
                                 <h1 class="text-3xl font-semibold"><span id="ratingNum">4</span>.<span id="ratingPoint">7</span></h1>
                                 <p class="text-2xl font-semibold"><i class="fa-solid fa-star text-green-600"></i> Rating</p>
                             </div>
                         </div>
-                        <div class="py-5">
+                        <div class="py-5 md:shadow-xl md:m-5 md:py-20">
                             <div>
                                 <h1 class="text-3xl font-semibold"><span id="languageNum">20</span>+</h1>
                                 <p class="text-2xl font-semibold"><i class="fa-solid fa-globe text-green-600 me-3"></i>Languages</p>
                             </div>
                         </div>
-                        <div class="py-5">
+                        <div class="py-5 md:shadow-xl md:m-5 md:py-20">
                             <div>
                                 <h1 class="text-3xl font-semibold"><span id="bankNum">15</span>K</h1>
                                 <p class="text-2xl font-semibold"><i class="fa-solid fa-building-columns text-green-600 me-3"></i>Banks Connect</p>
@@ -178,18 +246,18 @@
 
                     <div>
                         <h1 class="text-3xl font-semibold my-5">Use Cases</h1>
-                        <div class="space-y-5 text-white px-4">
-                            <div class="bg-gradient-to-r from-sky-500 to-indigo-500 p-5 space-y-5">
+                        <div class="space-y-5 text-white px-4 grid md:grid-cols-3 md:space-y-0 md:gap-5">
+                            <div class="bg-gradient-to-r from-sky-500 to-indigo-500 p-5 space-y-5 rounded-xl shadow-2xl">
                                 <h1 class="text-2xl">Budgeting</h1>
-                                <p class="">Set unlimited daily, weekly, monthly, or one-time budgets</p>
+                                <p class="md:text-start">Set unlimited daily, weekly, monthly, or one-time budgets</p>
                             </div>
-                            <div class="bg-gradient-to-r from-orange-400 to-orange-700 p-5 space-y-5">
+                            <div class="bg-gradient-to-r from-orange-400 to-orange-700 p-5 space-y-5 rounded-xl shadow-2xl">
                                 <h1 class="text-2xl">Expense Control</h1>
-                                <p>See every transaction, synced and categorized automatically.</p>
+                                <p class="md:text-start">See every transaction, synced and categorized automatically.</p>
                             </div>
-                            <div class="bg-gradient-to-r from-green-400 to-green-700 p-5 space-y-5">
+                            <div class="bg-gradient-to-r from-green-400 to-green-700 p-5 space-y-5 rounded-xl shadow-2xl">
                                 <h1 class="text-2xl">Planning</h1>
-                                <p>Get ahead of the curve. Automated upcoming payment notifications.</p>
+                                <p class="md:text-start">Get ahead of the curve. Automated upcoming payment notifications.</p>
                             </div>
                         </div>
                     </div>
@@ -198,7 +266,7 @@
 
                     <div class="py-20">
                         <h1 class="text-3xl font-semibold my-5">Why Wallet?</h1>
-                        <div class="space-y-20">
+                        <div class="space-y-20 grid md:grid-cols-3 md:space-y-0 md:gap-5">
                             <div class="wallet_svg space-y-10">
                                 <img src="image/advance.png" alt="" class="mx-auto">
                                 <div class="space-y-5 px-4">
@@ -229,27 +297,32 @@
             </div>
 
             <!-- landing page site design -->
-            <div class="py-20 space-y-20 w-full">
-                <div class="mb-3">
-                    <h1 class="py-5 text-center text-4xl font-semibold px-2">Landing a Richer Life</h1>
-                    <div>
-                        <img src="image/boat.png" alt="" class="mx-auto w-[85%]">
+                <div class="py-20 space-y-20 w-full md:space-y-5">
+                    <div class="mb-3 md:ps-5">
+                        <h1 class="py-5 text-center text-4xl font-semibold px-2">Landing a Richer Life</h1>
+                        <div class="md:flex justify-between items-center md:ms-5">
+                                <img src="image/boat.png" alt="" class="mx-auto w-[85%] md:w-50">
+                            <div class="px-5 space-y-5 mt-4 md:px-0">
+                                <h1 class="text-2xl font-semibold">Our mission at wallet-master is to help you <span class="text-green-500">lead a richer life</span>.</h1>
+                                <p>Building a picture of all your assets, monitoring your money and controlling your spending has one purpose, and one purpose only: to lead to a richer life.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="px-5 space-y-5 mt-4">
-                        <h1 class="text-2xl font-semibold">Our mission at wallet-master is to help you <span class="text-green-500">lead a richer life</span>.</h1>
-                        <p>Building a picture of all your assets, monitoring your money and controlling your spending has one purpose, and one purpose only: to lead to a richer life.</p>
-                    </div>
-                </div>
 
-                <div>
-                    <div>
-                        <img src="image/rich-life_.png" alt="" class="mx-auto w-[85%]">
+
+
+                    <div class="md:flex justify-between items-center md:me-5">
+                        <div class="px-5 space-y-5 md:px-0 d-none d-md-block">
+                            <h1 class="text-2xl font-semibold">A rich life isn’t just about money. <span class="text-green-500">It’s about how you use it</span>.</h1>
+                        </div>
+
+                        <img src="image/rich-life_.png" alt="" class="mx-auto w-[85%] md:w-25">
+                        <div class="px-5 space-y-5 mt-4 md:px-0 d-md-none ">
+                            <h1 class="text-2xl font-semibold">A rich life isn’t just about money. <span class="text-green-500">It’s about how you use it</span>.</h1>
+                        </div>
                     </div>
-                    <div class="px-5 space-y-5 mt-4">
-                        <h1 class="text-2xl font-semibold">A rich life isn’t just about money. <span class="text-green-500">It’s about how you use it</span>.</h1>
-                    </div>
+
                 </div>
-            </div>
 
 
             <!-- wallet ask icon section design -->
@@ -257,54 +330,58 @@
                 <div class="text-center">
                     <h1 class="text-3xl font-semibold my-5">Wallet Helps You:</h1>
                 </div>
-                <div class="space-y-20 grid sm:grid-cols-2 items-center gap-5 sm:space-y-0">
-                    <div class="space-y-4">
-                        <img src="image/AskQuestions.svg" alt="" class="mx-auto bg-gray-100 p-3 rounded-xl shadow-xl">
-                        <div class="text-center space-y-2">
-                            <p class="text-xl font-semibold">Ask the Question</p>
-                            <p>Where does my money go?</p>
+                <div class="md:px-10">
+                    <div class="space-y-20 grid sm:grid-cols-2 md:grid-cols-4 items-center gap-5 sm:space-y-0">
+                        <div class="space-y-4">
+                            <img src="image/AskQuestions.svg" alt="" class="mx-auto bg-gray-100 p-3 rounded-xl shadow-xl">
+                            <div class="text-center space-y-2">
+                                <p class="text-xl font-semibold">Ask the Question</p>
+                                <p>Where does my money go?</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="space-y-4">
-                        <img src="image/Piechart.svg" alt="" class="mx-auto bg-gray-100 p-3 rounded-xl shadow-xl">
-                        <div class="text-center space-y-2">
-                            <p class="text-xl font-semibold">See the Data</p>
-                            <p>Unlock key insights.</p>
+                        <div class="space-y-4">
+                            <img src="image/Piechart.svg" alt="" class="mx-auto bg-gray-100 p-3 rounded-xl shadow-xl">
+                            <div class="text-center space-y-2">
+                                <p class="text-xl font-semibold">See the Data</p>
+                                <p>Unlock key insights.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="space-y-4">
-                        <img src="image/PlannedPayments.svg" alt="" class="mx-auto bg-gray-100 p-3 rounded-xl shadow-xl">
-                        <div class="text-center space-y-2">
-                            <p class="text-xl font-semibold">Be Efficient</p>
-                            <p>No missed payments</p>
+                        <div class="space-y-4">
+                            <img src="image/PlannedPayments.svg" alt="" class="mx-auto bg-gray-100 p-3 rounded-xl shadow-xl">
+                            <div class="text-center space-y-2">
+                                <p class="text-xl font-semibold">Be Efficient</p>
+                                <p>No missed payments</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="space-y-4">
-                        <img src="image/Stats-1.svg" alt="" class="mx-auto bg-gray-100 p-3 rounded-xl shadow-xl">
-                        <div class="text-center space-y-2">
-                            <p class="text-xl font-semibold">Have the Answers</p>
-                            <p>Anytime, anywhere.</p>
+                        <div class="space-y-4">
+                            <img src="image/Stats-1.svg" alt="" class="mx-auto bg-gray-100 p-3 rounded-xl shadow-xl">
+                            <div class="text-center space-y-2">
+                                <p class="text-xl font-semibold">Have the Answers</p>
+                                <p>Anytime, anywhere.</p>
+                            </div>
                         </div>
+    
                     </div>
-
                 </div>
 
                 <!-- board section design -->
                 <div class="mt-5 py-5 px-4">
-                    <div class="px-5 space-y-5 bg-blue-50 py-5">
-                        <img src="image/Board-logo-primary.svg" alt="">
-
+                    <div class="px-5 space-y-5 bg-blue-50 py-5 md:flex justify-between md:space-y-0">
                         <div>
-                            <h1 class="text-3xl font-bold">Board: Wallet for Business</h1>
-                        </div>
-                        <div class="space-y-5 mt-5">
-                            <p class="font-semibold ">Looking for Wallet’s powerful features and more to run a small business?</p>
-                            <p>That’s why we invented Board: a powerful small business finance manager that goes beyond Point of Sale, to offer you a 360° view of your business finances.</p>
+                            <img src="image/Board-logo-primary.svg" alt="">
+
+                            <div>
+                                <h1 class="text-3xl font-bold">Board: Wallet for Business</h1>
+                            </div>
+                            <div class="space-y-5 mt-5">
+                                <p class="font-semibold ">Looking for Wallet’s powerful features and more to run a small business?</p>
+                                <p>That’s why we invented Board: a powerful small business finance manager that goes beyond Point of Sale, to offer you a 360° view of your business finances.</p>
+                            </div>
                         </div>
                         <div class="boardImage">
-                            <img src="image/board-image-2-e1649077143557.png" alt="" class="mx-auto">
+                            <img src="image/board-image-2-e1649077143557.png" alt="" class="mx-auto md:w-[100%]">
                             <div>
-                                <div class="bg-blue-500 text-white w-36 rounded-full ms-[25%] sm:ms-[35%] flex justify-around items-center">
+                                <div class="bg-blue-500 text-white w-36 rounded-full ms-[25%] sm:ms-[35%] md:ms-20 lg:ms-[40%] flex justify-around items-center">
                                     <button class="btn btn-group text-white text-xl font-semibold py-2">Try Board &nbsp;<i class="fa-solid fa-chevron-right text-white mt-[6px]"></i></button>
                                 </div>
                             </div>
@@ -322,7 +399,7 @@
                     <i class="fa-brands fa-instagram text-xl p-2 border-2 border-gray-700 rounded-full w-10 text-center text-gray-500 cursor-pointer hover:bg-gray-700 duration-700"></i>
                     <i class="fa-brands fa-linkedin text-xl p-2 border-2 border-gray-700 rounded-full w-10 text-center text-gray-500 cursor-pointer hover:bg-gray-700 duration-700"></i>
                 </div>
-                <div class="space-y-5 mt-5">
+                <div class="space-y-5 mt-5 md:flex justify-between items-center md:w-[50%] lg:w-[25%] md:mx-auto md:space-y-0">
                     <img src="image/google-play.svg" alt="" class="mx-auto">
                     <img src="image/app-store.svg" alt="" class="mx-auto">
                 </div>
